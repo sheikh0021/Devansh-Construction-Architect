@@ -315,7 +315,7 @@ export default function ContactPage() {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Don't wait! Contact us today and let's discuss how we can bring your construction or architectural vision to life.
+              Don&apos;t wait! Contact us today and let&apos;s discuss how we can bring your construction or architectural vision to life.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a

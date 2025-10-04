@@ -82,7 +82,7 @@ const ContactForm = () => {
                 </svg>
               </div>
               <h4 className="text-lg font-semibold text-green-800 mb-2">Message Sent Successfully!</h4>
-              <p className="text-green-600">We'll get back to you within 24 hours.</p>
+              <p className="text-green-600">We&apos;ll get back to you within 24 hours.</p>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -166,7 +166,7 @@ const ContactForm = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
           <p className="text-gray-600 mb-8 leading-relaxed">
             Ready to start your next construction or architectural project? 
-            Contact us today for a free consultation and let's bring your vision to life.
+            Contact us today for a free consultation and let&apos;s bring your vision to life.
           </p>
 
           <div className="space-y-6">

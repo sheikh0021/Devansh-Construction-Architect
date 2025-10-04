@@ -278,7 +278,7 @@ export default function AboutPage() {
               Ready to Work With Us?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
-              Let's discuss your project and see how we can bring your vision to life with our expertise and commitment to quality.
+              Let&apos;s discuss your project and see how we can bring your vision to life with our expertise and commitment to quality.
             </p>
             <a
               href="/contact"
