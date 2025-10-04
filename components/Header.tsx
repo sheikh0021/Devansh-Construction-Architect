@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Phone, MapPin } from 'lucide-react'
 
@@ -60,11 +61,17 @@ const Header = () => {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">DC</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="relative w-12 h-12 flex-shrink-0">
+              <Image
+                src="/lOGO_page-0001.jpg"
+                alt="Devansh Constro & Architect Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            <div>
+            <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-gray-900">Devansh Construction</h1>
               <p className="text-sm text-gray-600">& Architect</p>
             </div>

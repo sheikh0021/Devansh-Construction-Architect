@@ -25,98 +25,78 @@ export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [searchTerm, setSearchTerm] = useState('')
 
-  const categories = ['All', 'Residential', 'Commercial', 'Industrial', 'Educational', 'Mixed Use']
+  const categories = ['All', 'Residential', 'Commercial']
 
   const projects = [
     {
-      title: 'Modern Luxury Villa',
-      description: 'A stunning 4-BHK luxury villa with contemporary design, premium finishes, and smart home features in a prime location.',
-      image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'Galaxy Tower - Dhanori',
+      description: 'Modern luxury residential tower with contemporary design, premium finishes, and smart home features in the heart of Dhanori.',
+      image: '/dhanori.jpeg',
       category: 'Residential',
-      location: 'Pune, Maharashtra',
-      year: '2023',
-      size: '4500 sq ft',
-      features: ['4 BHK', 'Modern Design', 'Smart Home', 'Premium Finishes']
-    },
-    {
-      title: 'Corporate Office Complex',
-      description: 'Multi-story corporate office building with modern amenities, energy-efficient design, and flexible workspace solutions.',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      category: 'Commercial',
-      location: 'Pune, Maharashtra',
-      year: '2023',
-      size: '25,000 sq ft',
-      features: ['Glass Facade', 'Energy Efficient', 'Flexible Layout', 'Modern Amenities']
-    },
-    {
-      title: 'Apartment Complex',
-      description: 'Premium residential apartment complex with 2 and 3 BHK units, modern amenities, and landscaped gardens.',
-      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      category: 'Residential',
-      location: 'Pune, Maharashtra',
-      year: '2022',
-      size: '1,00,000 sq ft',
-      features: ['2 & 3 BHK', 'Landscaped Gardens', 'Modern Amenities', 'Premium Location']
-    },
-    {
-      title: 'Shopping Mall',
-      description: 'Modern shopping mall with retail spaces, food court, entertainment zones, and ample parking facilities.',
-      image: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      category: 'Commercial',
-      location: 'Pune, Maharashtra',
-      year: '2022',
+      location: 'Dhanori, Pune',
+      year: '2024',
       size: '2,50,000 sq ft',
-      features: ['Retail Spaces', 'Food Court', 'Entertainment', 'Ample Parking']
+      features: ['2 & 3 BHK', 'Modern Design', 'Premium Location', 'Smart Features']
     },
     {
-      title: 'Industrial Warehouse',
-      description: 'Large-scale industrial warehouse facility with modern loading systems, climate control, and security features.',
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      category: 'Industrial',
-      location: 'Pune, Maharashtra',
-      year: '2021',
-      size: '1,50,000 sq ft',
-      features: ['Climate Control', 'Loading Systems', 'Security Features', 'Modern Infrastructure']
-    },
-    {
-      title: 'Educational Campus',
-      description: 'Modern educational campus with classrooms, laboratories, library, sports facilities, and administrative buildings.',
-      image: 'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      category: 'Educational',
-      location: 'Pune, Maharashtra',
-      year: '2021',
-      size: '3,00,000 sq ft',
-      features: ['Modern Classrooms', 'Laboratories', 'Library', 'Sports Facilities']
-    },
-    {
-      title: 'Luxury Penthouse',
-      description: 'Exclusive penthouse with panoramic views, premium finishes, private terrace, and luxury amenities.',
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'Awhalwadi Residency',
+      description: 'Premium residential complex with modern amenities, landscaped gardens, and excellent connectivity in Awhalwadi.',
+      image: '/awhalwadi.jpeg',
       category: 'Residential',
-      location: 'Pune, Maharashtra',
+      location: 'Awhalwadi, Pune',
       year: '2023',
-      size: '3500 sq ft',
-      features: ['Panoramic Views', 'Private Terrace', 'Luxury Amenities', 'Premium Finishes']
+      size: '1,80,000 sq ft',
+      features: ['2 & 3 BHK', 'Landscaped Gardens', 'Modern Amenities', 'Excellent Connectivity']
     },
     {
-      title: 'Mixed-Use Development',
-      description: 'Integrated mixed-use development combining residential, commercial, and recreational spaces in a modern setting.',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      category: 'Mixed Use',
-      location: 'Pune, Maharashtra',
-      year: '2022',
-      size: '5,00,000 sq ft',
-      features: ['Residential Units', 'Commercial Spaces', 'Recreation Areas', 'Integrated Design']
-    },
-    {
-      title: 'Healthcare Facility',
-      description: 'Modern healthcare facility with patient rooms, operation theaters, diagnostic centers, and administrative areas.',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'Kharadi Business Hub',
+      description: 'State-of-the-art commercial complex designed for modern businesses with flexible workspaces and premium amenities.',
+      image: '/Kharadi.jpeg',
       category: 'Commercial',
-      location: 'Pune, Maharashtra',
-      year: '2021',
-      size: '75,000 sq ft',
-      features: ['Patient Rooms', 'Operation Theaters', 'Diagnostic Center', 'Modern Equipment']
+      location: 'Kharadi, Pune',
+      year: '2023',
+      size: '3,20,000 sq ft',
+      features: ['Flexible Workspaces', 'Modern Amenities', 'Premium Location', 'Business Hub']
+    },
+    {
+      title: 'Junnar Heights',
+      description: 'Luxurious residential development offering premium living spaces with modern design and scenic views.',
+      image: '/Junnar.jpeg',
+      category: 'Residential',
+      location: 'Junnar, Pune',
+      year: '2022',
+      size: '1,50,000 sq ft',
+      features: ['Premium Living', 'Scenic Views', 'Modern Design', 'Luxury Amenities']
+    },
+    {
+      title: 'Lohegaon Row Houses',
+      description: 'Exclusive row house development with contemporary architecture, private gardens, and premium finishes.',
+      image: '/Lohegaon Row House.jpeg',
+      category: 'Residential',
+      location: 'Lohegaon, Pune',
+      year: '2022',
+      size: '2,00,000 sq ft',
+      features: ['Row Houses', 'Private Gardens', 'Contemporary Design', 'Premium Finishes']
+    },
+    {
+      title: 'Manjiri Gardens',
+      description: 'Beautiful residential project with landscaped gardens, modern amenities, and family-friendly environment.',
+      image: '/Manjiri.jpeg',
+      category: 'Residential',
+      location: 'Manjiri, Pune',
+      year: '2023',
+      size: '1,40,000 sq ft',
+      features: ['Landscaped Gardens', 'Family Friendly', 'Modern Amenities', 'Beautiful Design']
+    },
+    {
+      title: 'Satara Plaza',
+      description: 'Modern commercial plaza offering retail and office spaces with contemporary design and excellent connectivity.',
+      image: '/Satara.jpeg',
+      category: 'Commercial',
+      location: 'Satara, Maharashtra',
+      year: '2022',
+      size: '2,80,000 sq ft',
+      features: ['Retail Spaces', 'Office Complex', 'Modern Design', 'Excellent Connectivity']
     }
   ]
 
@@ -131,10 +111,7 @@ export default function ProjectsPage() {
   const categoryIcons = {
     'All': Building2,
     'Residential': Home,
-    'Commercial': ShoppingBag,
-    'Industrial': Factory,
-    'Educational': GraduationCap,
-    'Mixed Use': Building2
+    'Commercial': ShoppingBag
   }
 
   return (
@@ -154,8 +131,9 @@ export default function ProjectsPage() {
                 Our <span className="text-primary-600">Project Portfolio</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Explore our diverse portfolio of completed projects showcasing our expertise in residential, 
-                commercial, industrial, and educational construction across Pune and Maharashtra.
+                Explore our diverse portfolio of completed projects showcasing our expertise in residential 
+                and commercial construction across Pune, including modern residential towers, 
+                business hubs, and premium developments.
               </p>
             </motion.div>
           </div>
@@ -268,18 +246,10 @@ export default function ProjectsPage() {
                     </p>
 
                     {/* Project Details */}
-                    <div className="space-y-2 mb-4">
+                    <div className="mb-4">
                       <div className="flex items-center text-sm text-gray-500">
                         <MapPin className="w-4 h-4 mr-2" />
                         <span>{project.location}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        <span>Completed: {project.year}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-gray-500">
-                        <Building2 className="w-4 h-4 mr-2" />
-                        <span>Size: {project.size}</span>
                       </div>
                     </div>
 
