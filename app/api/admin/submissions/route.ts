@@ -9,11 +9,8 @@ import { checkAdminAuth } from '@/lib/auth'
 
 export async function GET(request: NextRequest) {
   try {
-    console.log('Admin submissions API called')
-    
     // Check admin authentication
     if (!checkAdminAuth(request)) {
-      console.log('Admin authentication failed')
       return NextResponse.json(
         { error: 'Unauthorized access' },
         { status: 401 }
@@ -23,14 +20,11 @@ export async function GET(request: NextRequest) {
     const submissions = getAllSubmissions()
     const stats = getSubmissionStats()
 
-    console.log('Returning submissions:', { count: submissions.length, stats })
-
     return NextResponse.json({
       submissions,
       stats
     })
   } catch (error) {
-    console.error('Error in admin submissions API:', error)
     return NextResponse.json(
       { error: 'Failed to fetch submissions' },
       { status: 500 }

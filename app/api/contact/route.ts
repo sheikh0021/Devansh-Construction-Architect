@@ -40,7 +40,6 @@ export async function POST(request: NextRequest) {
       message: message.trim()
     })
 
-    console.log('Contact submission received:', submission)
 
     return NextResponse.json({
       success: true,
