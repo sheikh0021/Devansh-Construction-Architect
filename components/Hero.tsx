@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Phone, CheckCircle } from 'lucide-react'
+import RippleButton from './RippleButton'
 
 interface HeroProps {
   title: string
@@ -123,13 +124,13 @@ const Hero = ({
               <span>{ctaText}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
-            <a
+            <RippleButton
               href="tel:+917249400319"
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center space-x-2"
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white"
             >
               <Phone className="w-5 h-5" />
               <span>Call Now</span>
-            </a>
+            </RippleButton>
           </motion.div>
 
           {/* Stats */}

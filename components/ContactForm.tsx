@@ -7,11 +7,14 @@ import { Send, Phone, Mail, MapPin, Clock } from 'lucide-react'
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     phone: '',
+    subject: '',
     message: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -23,18 +26,34 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError('')
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after success
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({ name: '', phone: '', message: '' })
-    }, 3000)
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        // Reset form after success
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+        }, 5000)
+      } else {
+        setSubmitError(data.error || 'Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      setSubmitError('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -86,6 +105,16 @@ const ContactForm = () => {
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {submitError && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-red-50 border border-red-200 rounded-lg p-3"
+                >
+                  <p className="text-red-600 text-sm">{submitError}</p>
+                </motion.div>
+              )}
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Full Name *
@@ -101,10 +130,26 @@ const ContactForm = () => {
                   placeholder="Your full name"
                 />
               </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  Email Address *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
+                  placeholder="your.email@example.com"
+                />
+              </div>
               
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
+                  Phone Number *
                 </label>
                 <input
                   type="tel"
@@ -112,8 +157,25 @@ const ContactForm = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
                   placeholder="7249400319"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  Subject *
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors duration-200"
+                  placeholder="What is this regarding?"
                 />
               </div>
               

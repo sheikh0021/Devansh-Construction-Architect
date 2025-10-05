@@ -79,9 +79,23 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen bg-white">
-        {children}
-      </body>
+        <body className="min-h-screen bg-white">
+          {children}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                // Fix for Framer Motion elements not showing
+                setTimeout(() => {
+                  const hiddenElements = document.querySelectorAll('[style*="opacity:0"]');
+                  hiddenElements.forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'none';
+                  });
+                }, 100);
+              `,
+            }}
+          />
+        </body>
     </html>
   )
 }

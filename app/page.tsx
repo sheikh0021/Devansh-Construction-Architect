@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
 import SectionTitle from '@/components/SectionTitle'
 import ServiceCard from '@/components/ServiceCard'
+import RippleButton from '@/components/RippleButton'
 import { 
   Building2, 
   PenTool, 
@@ -64,7 +65,7 @@ export default function HomePage() {
       
       {/* Hero Section */}
       <Hero
-        title="Building Dreams with Precision & Trust"
+        title="New Vision for Better Living"
         subtitle="Devansh Construction & Architect"
         description="We deliver exceptional architectural designs and construction services that transform your vision into reality. From concept to completion, we ensure quality, innovation, and client satisfaction."
         ctaText="Get Free Consultation"
@@ -217,13 +218,10 @@ export default function HomePage() {
                 <span>Get Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <a
-                href="tel:+917249400319"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
-              >
+              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white">
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>
-              </a>
+              </RippleButton>
             </div>
           </motion.div>
         </div>
@@ -235,10 +233,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-white">
             <div className="flex items-center justify-center space-x-3">
               <Phone className="w-5 h-5" />
-              <div>
-                <div className="font-semibold">Call Us</div>
-                <div className="text-sm text-primary-100">+91 724 940 0319</div>
-              </div>
+              <div className="font-semibold">Call Us</div>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <Mail className="w-5 h-5" />

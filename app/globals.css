@@ -48,3 +48,63 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary-700;
 }
+
+/* Ripple animation */
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+/* Enhanced splash ripple animation */
+@keyframes splash-ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* Continuous splash animation */
+@keyframes continuous-splash {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.8;
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Framer Motion Fallback - Ensure content is visible */
+[style*="opacity:0"] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* JavaScript fallback for Framer Motion visibility */
+.framer-motion-fallback {
+  opacity: 1 !important;
+  transform: none !important;
+}

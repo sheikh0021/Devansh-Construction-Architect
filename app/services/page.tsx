@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SectionTitle from '@/components/SectionTitle'
 import ServiceCard from '@/components/ServiceCard'
+import RippleButton from '@/components/RippleButton'
 import { 
   PenTool, 
   Building2, 
@@ -182,13 +183,13 @@ export default function ServicesPage() {
                   <span>Get Free Quote</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>
-                <a
+                <RippleButton
                   href="tel:+917249400319"
-                  className="bg-white hover:bg-gray-50 text-primary-600 font-semibold px-8 py-3 rounded-lg border-2 border-primary-600 transition-colors duration-200 flex items-center space-x-2"
+                  className="bg-white hover:bg-gray-50 text-primary-600 font-semibold px-8 py-3 rounded-lg border-2 border-primary-600"
                 >
                   <Phone className="w-5 h-5" />
                   <span>Call Now</span>
-                </a>
+                </RippleButton>
               </div>
             </motion.div>
           </div>
@@ -426,20 +427,14 @@ export default function ServicesPage() {
               Contact us today for a free consultation and detailed quote for your architectural and construction needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="/contact"
-                className="bg-white hover:bg-gray-100 text-primary-600 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
-              >
+              <RippleButton href="/contact" className="bg-white text-primary-600 hover:bg-gray-100">
                 <span>Get Free Quote</span>
                 <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="tel:+917249400319"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
-              >
+              </RippleButton>
+              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white">
                 <Phone className="w-5 h-5" />
-                <span>Call +91 724 940 0319</span>
-              </a>
+                <span>Call Now</span>
+              </RippleButton>
             </div>
           </motion.div>
         </div>

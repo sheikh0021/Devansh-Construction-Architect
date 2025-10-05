@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import SectionTitle from '@/components/SectionTitle'
 import ContactForm from '@/components/ContactForm'
+import RippleButton from '@/components/RippleButton'
 import { 
   Phone, 
   Mail, 
@@ -27,7 +28,6 @@ export default function ContactPage() {
       icon: Phone,
       title: 'Call Us',
       description: 'Speak directly with our experts',
-      value: '7249400319',
       action: 'tel:7249400319',
       color: 'bg-green-100 text-green-600'
     },
@@ -43,7 +43,6 @@ export default function ContactPage() {
       icon: MessageCircle,
       title: 'WhatsApp',
       description: 'Quick chat with our team',
-      value: '7249400319',
       action: 'https://wa.me/917249400319',
       color: 'bg-green-100 text-green-600'
     }
@@ -115,14 +114,13 @@ export default function ContactPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             {contactMethods.map((method, index) => (
-              <motion.a
+              <motion.div
                 key={method.title}
-                href={method.action}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200 text-center"
+                className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-primary-200 text-center flex flex-col h-full"
               >
                 <div className={`w-16 h-16 ${method.color} rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200`}>
                   <method.icon className="w-8 h-8" />
@@ -130,9 +128,17 @@ export default function ContactPage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors duration-200">
                   {method.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-3">{method.description}</p>
-                <p className="text-primary-600 font-medium">{method.value}</p>
-              </motion.a>
+                <p className="text-gray-600 text-sm mb-4 flex-grow">{method.description}</p>
+                {method.value ? (
+                  <p className="text-primary-600 font-medium mb-4">{method.value}</p>
+                ) : null}
+                <div className="mt-auto">
+                  <RippleButton href={method.action} className="w-full">
+                    <method.icon className="w-4 h-4" />
+                    <span>{method.title === 'Call Us' ? 'Call Now' : method.title === 'WhatsApp' ? 'Chat Now' : 'Visit'}</span>
+                  </RippleButton>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -225,7 +231,7 @@ export default function ContactPage() {
                   <h4 className="font-semibold text-primary-800">Emergency Support</h4>
                 </div>
                 <p className="text-primary-700 text-sm leading-relaxed">
-                  For urgent matters outside working hours, please call us directly at 7249400319. 
+                  For urgent matters outside working hours, please use the contact button above. 
                   We provide emergency support for critical construction issues.
                 </p>
               </motion.div>
@@ -318,20 +324,14 @@ export default function ContactPage() {
               Don&apos;t wait! Contact us today and let&apos;s discuss how we can bring your construction or architectural vision to life.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href="tel:7249400319"
-                className="bg-white hover:bg-gray-100 text-primary-600 font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
-              >
+              <RippleButton href="tel:7249400319" className="bg-white text-primary-600 hover:bg-gray-100">
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>
-              </a>
-              <a
-                href="https://wa.me/917249400319"
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
-              >
+              </RippleButton>
+              <RippleButton href="https://wa.me/917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white">
                 <MessageCircle className="w-5 h-5" />
                 <span>WhatsApp</span>
-              </a>
+              </RippleButton>
             </div>
           </motion.div>
         </div>

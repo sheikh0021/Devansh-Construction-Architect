@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import RippleButton from '@/components/RippleButton'
 import { Phone, Mail, MapPin, Facebook } from 'lucide-react'
 
 const Footer = () => {
@@ -66,12 +67,16 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="space-y-3"
+              className="space-y-4"
             >
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-400" />
-                <span>7249400319</span>
+                <span>Call Us</span>
               </div>
+              <RippleButton href="tel:+917249400319" className="bg-primary-600 hover:bg-primary-700 w-full">
+                <Phone className="w-4 h-4" />
+                <span>Call Now</span>
+              </RippleButton>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary-400" />
                 <span>Office No.09,C-Wing,Yogin Belva,Santnagar,Lohegaon,Pune-411047</span>
