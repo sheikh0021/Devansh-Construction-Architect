@@ -157,14 +157,6 @@ export default function HomePage() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              
-              {/* Floating Stats Card */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary-600 mb-1">15+</div>
-                  <div className="text-sm text-gray-600">Years in Business</div>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
