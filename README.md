@@ -1,6 +1,6 @@
-# Devansh Construction & Architect Website
+# Devansh Constro & Architect Website
 
-A professional, fully responsive website for Devansh Construction & Architect - a leading construction and architectural firm in Pune, Maharashtra.
+A professional, fully responsive website for Devansh Constro & Architect - a leading construction and architectural firm in Pune, Maharashtra.
 
 ## 🏗️ Features
 
@@ -149,7 +149,7 @@ The website is built with Next.js and can be deployed on any platform that suppo
 
 ## 📝 License
 
-This project is proprietary to Devansh Construction & Architect.
+This project is proprietary to Devansh Constro & Architect.
 
 ## 🤝 Support
 
@@ -159,4 +159,4 @@ For technical support or questions about this website, please contact:
 
 ---
 
-Built with ❤️ for Devansh Construction & Architect
+Built with ❤️ for Devansh Constro & Architect

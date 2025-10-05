@@ -166,7 +166,7 @@ export default function ContactPage() {
           <SectionTitle
             title="Why Contact Us?"
             subtitle="Our Commitment"
-            description="When you contact Devansh Construction & Architect, you get more than just a construction service - you get a partner committed to your success."
+            description="When you contact Devansh Constro & Architect, you get more than just a construction service - you get a partner committed to your success."
             center={true}
           />
           

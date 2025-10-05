@@ -66,7 +66,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero
         title="New Vision for Better Living"
-        subtitle="Devansh Construction & Architect"
+        subtitle="Devansh Constro & Architect"
         description="We deliver exceptional architectural designs and construction services that transform your vision into reality. From concept to completion, we ensure quality, innovation, and client satisfaction."
         ctaText="Get Free Consultation"
         ctaLink="/contact"
@@ -104,7 +104,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionTitle
-                title="Why Choose Devansh Construction?"
+                title="Why Choose Devansh Constro?"
                 subtitle="Our Commitment"
                 description="We are committed to delivering excellence in every project with our experienced team, quality materials, and client-focused approach."
                 center={false}

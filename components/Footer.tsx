@@ -45,7 +45,7 @@ const Footer = () => {
                   <span className="text-white font-bold text-lg">DC</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Devansh Construction</h3>
+                  <h3 className="text-xl font-bold">Devansh Constro</h3>
                   <p className="text-sm text-gray-400">& Architect</p>
                 </div>
               </Link>
@@ -208,7 +208,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-400"
           >
-            <p>&copy; 2024 Devansh Construction & Architect. All rights reserved.</p>
+            <p>&copy; 2024 Devansh Constro & Architect. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy" className="hover:text-primary-400 transition-colors duration-200">
                 Privacy Policy

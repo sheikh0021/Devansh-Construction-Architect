@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Devansh Construction & Architect - Building Dreams with Precision & Trust',
+  title: 'Devansh Constro & Architect - Building Dreams with Precision & Trust',
   description: 'Professional architectural services and construction solutions. 3D design, PMC sanction drawings, Vastu consultation, civil construction, and lock & key projects.',
   keywords: 'architectural services, construction services, 3D design, PMC sanction drawing, Vastu consultation, civil construction, PMC PCMC PMRDA sanctioning, lock & key construction',
-  authors: [{ name: 'Devansh Construction & Architect' }],
+  authors: [{ name: 'Devansh Constro & Architect' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Devansh Construction & Architect - Building Dreams with Precision & Trust',
+    title: 'Devansh Constro & Architect - Building Dreams with Precision & Trust',
     description: 'Professional architectural services and construction solutions with innovative designs and quality construction.',
     type: 'website',
     locale: 'en_IN',
@@ -34,7 +34,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Devansh Construction & Architect",
+              "name": "Devansh Constro & Architect",
               "description": "Professional architectural services and construction solutions",
               "telephone": "+91 724 940 0319",
               "email": "info@devanshconstruction.com",

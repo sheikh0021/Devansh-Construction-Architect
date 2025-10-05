@@ -84,7 +84,7 @@ export default function AboutPage() {
                   Building Dreams with <span className="text-primary-600">Precision & Trust</span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  At Devansh Construction & Architect, we have been transforming visions into reality for over a decade. 
+                  At Devansh Constro & Architect, we have been transforming visions into reality for over a decade. 
                   Our commitment to quality, innovation, and client satisfaction has made us a trusted name in the 
                   construction and architecture industry.
                 </p>
@@ -129,7 +129,7 @@ export default function AboutPage() {
           <SectionTitle
             title="Our Story"
             subtitle="Who We Are"
-            description="Founded with a vision to deliver exceptional construction and architectural services, Devansh Construction & Architect has grown to become a trusted name in the industry."
+            description="Founded with a vision to deliver exceptional construction and architectural services, Devansh Constro & Architect has grown to become a trusted name in the industry."
             center={true}
           />
           

@@ -72,7 +72,7 @@ const Header = () => {
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-gray-900">Devansh Construction</h1>
+              <h1 className="text-xl font-bold text-gray-900">Devansh Constro</h1>
               <p className="text-sm text-gray-600">& Architect</p>
             </div>
           </Link>
