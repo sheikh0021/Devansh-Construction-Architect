@@ -45,7 +45,7 @@ export default function HomePage() {
 
   const stats = [
     { icon: Building2, value: '100', label: 'Projects Completed' },
-    { icon: Users, value: '300+', label: 'Happy Clients' },
+    { icon: Users, value: '100', label: 'Happy Clients' },
     { icon: Award, value: '10+', label: 'Years Experience' },
     { icon: Clock, value: '24/7', label: 'Support Available' }
   ]

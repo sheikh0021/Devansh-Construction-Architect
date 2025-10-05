@@ -50,7 +50,7 @@ export default function AboutPage() {
     },
     {
       icon: Users,
-      title: '300+ Clients',
+      title: '100 Clients',
       description: 'Satisfied clients who trust us with their projects'
     },
     {

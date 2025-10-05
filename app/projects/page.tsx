@@ -300,7 +300,7 @@ export default function ProjectsPage() {
               <div className="text-primary-100">Projects Completed</div>
             </div>
             <div className="text-center text-white">
-              <div className="text-3xl md:text-4xl font-bold mb-2">300+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">100</div>
               <div className="text-primary-100">Happy Clients</div>
             </div>
             <div className="text-center text-white">
