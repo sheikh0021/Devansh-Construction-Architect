@@ -194,79 +194,45 @@ export default function ContactPage() {
       {/* Working Hours */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <SectionTitle
-                title="Working Hours"
-                subtitle="When We're Available"
-                description="Our team is available during these hours to assist you with your construction and architectural needs."
-                center={false}
-              />
-              
-              <div className="mt-8 space-y-4">
-                {workingHours.map((schedule, index) => (
-                  <motion.div
-                    key={schedule.day}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm"
-                  >
-                    <span className="font-medium text-gray-900">{schedule.day}</span>
-                    <span className="text-primary-600 font-semibold">{schedule.hours}</span>
-                  </motion.div>
-                ))}
-              </div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="mt-8 p-6 bg-primary-50 rounded-xl border border-primary-200"
-              >
-                <div className="flex items-center space-x-3 mb-3">
-                  <Clock className="w-6 h-6 text-primary-600" />
-                  <h4 className="font-semibold text-primary-800">Emergency Support</h4>
-                </div>
-                <p className="text-primary-700 text-sm leading-relaxed">
-                  For urgent matters outside working hours, please use the contact button above. 
-                  We provide emergency support for critical construction issues.
-                </p>
-              </motion.div>
+          <div className="max-w-4xl mx-auto">
+            <SectionTitle
+              title="Working Hours"
+              subtitle="When We're Available"
+              description="Our team is available during these hours to assist you with your construction and architectural needs."
+              center={true}
+            />
+            
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {workingHours.map((schedule, index) => (
+                <motion.div
+                  key={schedule.day}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm"
+                >
+                  <span className="font-medium text-gray-900">{schedule.day}</span>
+                  <span className="text-primary-600 font-semibold">{schedule.hours}</span>
+                </motion.div>
+              ))}
             </div>
             
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
-              className="relative"
+              className="mt-12 max-w-2xl mx-auto p-6 bg-primary-50 rounded-xl border border-primary-200"
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Construction Team"
-                  className="w-full h-full object-cover"
-                />
+              <div className="flex items-center space-x-3 mb-3">
+                <Clock className="w-6 h-6 text-primary-600" />
+                <h4 className="font-semibold text-primary-800">Emergency Support</h4>
               </div>
-              
-              {/* Floating Info Card */}
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-6 max-w-xs">
-                <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Quick Response</h4>
-                    <p className="text-sm text-gray-600">Within 24 hours</p>
-                  </div>
-                </div>
-                <p className="text-sm text-gray-600">
-                  We respond to all inquiries within 24 hours, ensuring you get the information you need quickly.
-                </p>
-              </div>
+              <p className="text-primary-700 text-sm leading-relaxed">
+                For urgent matters outside working hours, please use the contact button above. 
+                We provide emergency support for critical construction issues.
+              </p>
             </motion.div>
           </div>
         </div>
