@@ -41,17 +41,19 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
+              <a href="tel:+917249400319" className="flex items-center space-x-2 hover:text-primary-200 transition-colors duration-200">
                 <Phone className="w-4 h-4" />
                 <span>7249400319</span>
-              </div>
+              </a>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
                 <span>Lohegaon, Pune-411047</span>
               </div>
             </div>
             <div className="hidden md:block">
-              <span>Contact: 7249400319</span>
+              <a href="tel:+917249400319" className="hover:text-primary-200 transition-colors duration-200">
+                Contact: 7249400319
+              </a>
             </div>
           </div>
         </div>
