@@ -126,7 +126,7 @@ const Hero = ({
             </a>
             <RippleButton
               href="tel:+917249400319"
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white"
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-black"
             >
               <Phone className="w-5 h-5" />
               <span>Call Now</span>

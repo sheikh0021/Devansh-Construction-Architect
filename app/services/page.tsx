@@ -185,7 +185,7 @@ export default function ServicesPage() {
                 </a>
                 <RippleButton
                   href="tel:+917249400319"
-                  className="bg-white hover:bg-gray-50 text-primary-600 font-semibold px-8 py-3 rounded-lg border-2 border-primary-600"
+                  className="bg-white hover:bg-gray-50 text-black font-semibold px-8 py-3 rounded-lg border-2 border-primary-600"
                 >
                   <Phone className="w-5 h-5" />
                   <span>Call Now</span>
@@ -431,7 +431,7 @@ export default function ServicesPage() {
                 <span>Get Free Quote</span>
                 <ArrowRight className="w-5 h-5" />
               </RippleButton>
-              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white">
+              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-black">
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>
               </RippleButton>

@@ -218,7 +218,7 @@ export default function HomePage() {
                 <span>Get Free Consultation</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
-              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white">
+              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-black">
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>
               </RippleButton>

@@ -73,7 +73,7 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-primary-400" />
                 <span>Call Us</span>
               </div>
-              <RippleButton href="tel:+917249400319" className="bg-primary-600 hover:bg-primary-700 w-full">
+              <RippleButton href="tel:+917249400319" className="bg-primary-600 hover:bg-primary-700 w-full text-black">
                 <Phone className="w-4 h-4" />
                 <span>Call Now</span>
               </RippleButton>

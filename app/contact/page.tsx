@@ -290,7 +290,7 @@ export default function ContactPage() {
               Don&apos;t wait! Contact us today and let&apos;s discuss how we can bring your construction or architectural vision to life.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <RippleButton href="tel:7249400319" className="bg-white text-primary-600 hover:bg-gray-100">
+              <RippleButton href="tel:7249400319" className="bg-white text-black hover:bg-gray-100">
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>
               </RippleButton>
