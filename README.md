@@ -41,7 +41,7 @@ A professional, fully responsive website for Devansh Constro & Architect - a lea
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/sheikh0021/Devansh-Construction-Architect.git
 cd devansh-construction
 ```
 
@@ -90,25 +90,6 @@ npm start
 └── next.config.js         # Next.js configuration
 ```
 
-## 🎨 Design System
-
-### Colors
-- **Primary Blue**: #3b82f6 (Primary-600)
-- **Golden Accent**: #f59e0b (Golden-500)
-- **Grey**: #6b7280 (Gray-500)
-- **White**: #ffffff
-
-### Typography
-- **Font**: Inter (Google Fonts)
-- **Headings**: Bold weights (600-800)
-- **Body**: Regular weight (400)
-
-## 📞 Contact Information
-
-- **Phone**: +91 724 940 0319
-- **Email**: Devanshconstro@gmail.com
-- **Location**: Pune, Maharashtra, India
-
 ## 🔧 Customization
 
 ### Adding New Projects
@@ -132,31 +113,3 @@ Update contact details in:
 - Structured headings (H1, H2, H3)
 - Optimized images and content
 - Fast loading performance
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push code to GitHub
-2. Connect repository to Vercel
-3. Deploy automatically
-
-### Other Platforms
-The website is built with Next.js and can be deployed on any platform that supports Node.js:
-- Netlify
-- AWS Amplify
-- Railway
-- DigitalOcean App Platform
-
-## 📝 License
-
-This project is proprietary to Devansh Constro & Architect.
-
-## 🤝 Support
-
-For technical support or questions about this website, please contact:
-- **Email**: Devanshconstro@gmail.com
-- **Phone**: +91 724 940 0319
-
----
-
-Built with ❤️ for Devansh Constro & Architect
