@@ -50,8 +50,8 @@ export default function RootLayout({
                 "@type": "GeoCircle",
                 "geoMidpoint": {
                   "@type": "GeoCoordinates",
-                  "latitude": 18.5204,
-                  "longitude": 73.8567
+                  "latitude": 18.59681405132737,
+                  "longitude": 73.930597071165
                 },
                 "geoRadius": "50"
               },
