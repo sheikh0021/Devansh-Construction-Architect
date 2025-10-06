@@ -106,7 +106,7 @@ npm start
 ## 📞 Contact Information
 
 - **Phone**: +91 724 940 0319
-- **Email**: info@devanshconstruction.com
+- **Email**: Devanshconstro@gmail.com
 - **Location**: Pune, Maharashtra, India
 
 ## 🔧 Customization
@@ -154,7 +154,7 @@ This project is proprietary to Devansh Constro & Architect.
 ## 🤝 Support
 
 For technical support or questions about this website, please contact:
-- **Email**: info@devanshconstruction.com
+- **Email**: Devanshconstro@gmail.com
 - **Phone**: +91 724 940 0319
 
 ---

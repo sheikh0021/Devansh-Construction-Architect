@@ -227,11 +227,11 @@ export default function HomePage() {
               <Phone className="w-5 h-5" />
               <div className="font-semibold">Call Us</div>
             </a>
-            <a href="mailto:info@devanshconstruction.com" className="flex items-center justify-center space-x-3 hover:bg-primary-700 rounded-lg px-4 py-2 transition-colors duration-200">
+            <a href="mailto:Devanshconstro@gmail.com" className="flex items-center justify-center space-x-3 hover:bg-primary-700 rounded-lg px-4 py-2 transition-colors duration-200">
               <Mail className="w-5 h-5" />
               <div>
                 <div className="font-semibold">Email Us</div>
-                <div className="text-sm text-primary-100">info@devanshconstruction.com</div>
+                <div className="text-sm text-primary-100">Devanshconstro@gmail.com</div>
               </div>
             </a>
             <div className="flex items-center justify-center space-x-3">

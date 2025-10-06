@@ -37,7 +37,7 @@ export default function RootLayout({
               "name": "Devansh Constro & Architect",
               "description": "Professional architectural services and construction solutions",
               "telephone": "+91 724 940 0319",
-              "email": "info@devanshconstruction.com",
+              "email": "Devanshconstro@gmail.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Office No.09,C-Wing,Yogin Belva,Santnagar,Lohegaon",
