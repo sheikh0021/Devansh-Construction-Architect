@@ -204,16 +204,12 @@ export default function HomePage() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="/contact"
+                href="tel:+917249400319"
                 className="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
               >
-                <span>Get Free Consultation</span>
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-black">
                 <Phone className="w-5 h-5" />
-                <span>Call Now</span>
-              </RippleButton>
+                <span>Get Free Consultation</span>
+              </a>
             </div>
           </motion.div>
         </div>

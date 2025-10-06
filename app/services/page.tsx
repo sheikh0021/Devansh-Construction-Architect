@@ -176,16 +176,9 @@ export default function ServicesPage() {
                 quality materials, and innovative approaches that exceed your expectations.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  href="/contact"
-                  className="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-2"
-                >
-                  <span>Get Free Quote</span>
-                  <ArrowRight className="w-5 h-5" />
-                </a>
                 <RippleButton
                   href="tel:+917249400319"
-                  className="bg-white hover:bg-gray-50 text-black font-semibold px-8 py-3 rounded-lg border-2 border-primary-600"
+                  className="bg-primary-600 hover:bg-primary-700 text-white font-semibold px-8 py-3 rounded-lg"
                 >
                   <Phone className="w-5 h-5" />
                   <span>Call Now</span>
@@ -427,11 +420,7 @@ export default function ServicesPage() {
               Contact us today for a free consultation and detailed quote for your architectural and construction needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <RippleButton href="/contact" className="bg-white text-primary-600 hover:bg-gray-100">
-                <span>Get Free Quote</span>
-                <ArrowRight className="w-5 h-5" />
-              </RippleButton>
-              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-black">
+              <RippleButton href="tel:+917249400319" className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white">
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>
               </RippleButton>
