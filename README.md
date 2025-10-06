@@ -41,7 +41,7 @@ A professional, fully responsive website for Devansh Constro & Architect - a lea
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/sheikh0021/Devansh-Construction-Architect.git
 cd devansh-construction
 ```
 
