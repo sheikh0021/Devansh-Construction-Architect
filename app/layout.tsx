@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   keywords: 'architectural services, construction services, 3D design, PMC sanction drawing, Vastu consultation, civil construction, PMC PCMC PMRDA sanctioning, lock & key construction',
   authors: [{ name: 'Devansh Constro & Architect' }],
   robots: 'index, follow',
+  icons: {
+    icon: '/lOGO_page-0001.jpg',
+    shortcut: '/lOGO_page-0001.jpg',
+    apple: '/lOGO_page-0001.jpg',
+  },
   openGraph: {
     title: 'Devansh Constro & Architect - Building Dreams with Precision & Trust',
     description: 'Professional architectural services and construction solutions with innovative designs and quality construction.',
@@ -28,6 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/lOGO_page-0001.jpg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/lOGO_page-0001.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/lOGO_page-0001.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
