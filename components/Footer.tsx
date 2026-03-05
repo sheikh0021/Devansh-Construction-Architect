@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import RippleButton from '@/components/RippleButton'
-import { Phone, Mail, MapPin, Facebook } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
 
 const Footer = () => {
   const services = [
@@ -21,10 +21,6 @@ const Footer = () => {
     { name: 'Services', href: '/services' },
     { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
-  ]
-
-  const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
   ]
 
   return (
@@ -143,46 +139,14 @@ const Footer = () => {
             </motion.ul>
           </div>
 
-          {/* Social Media & Newsletter */}
+          {/* Newsletter */}
           <div>
-            <motion.h4
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="text-lg font-semibold mb-4"
-            >
-              Follow Us
-            </motion.h4>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="flex space-x-4 mb-6"
             >
-              {socialLinks.map((social) => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors duration-200"
-                  aria-label={social.name}
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <h5 className="text-sm font-medium mb-2">Get Updates</h5>
-              <p className="text-gray-400 text-sm mb-3">
-                Subscribe to our newsletter for project updates.
-              </p>
               <div className="flex">
                 <input
                   type="email"

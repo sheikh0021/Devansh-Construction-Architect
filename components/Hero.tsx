@@ -24,8 +24,8 @@ const Hero = ({
   showStats = false 
 }: HeroProps) => {
   const stats = [
-    { label: 'Projects Completed', value: '100' },
-    { label: 'Happy Clients', value: '100' },
+    { label: 'Projects Completed', value: '150+' },
+    { label: 'Happy Clients', value: '150+' },
     { label: 'Years Experience', value: '10+' },
     { label: 'Team Members', value: '25+' }
   ]

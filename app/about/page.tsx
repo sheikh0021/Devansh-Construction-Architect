@@ -45,12 +45,12 @@ export default function AboutPage() {
   const achievements = [
     {
       icon: Building2,
-      title: '100 Projects',
+      title: '150+ Projects',
       description: 'Successfully completed residential and commercial projects'
     },
     {
       icon: Users,
-      title: '100 Clients',
+      title: '150+ Clients',
       description: 'Satisfied clients who trust us with their projects'
     },
     {
